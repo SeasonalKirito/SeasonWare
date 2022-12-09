@@ -1,4 +1,4 @@
 # Booting up The Hub.
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/SeasonalKirito/SeasonWare/main/Loader.lua?token=GHSAT0AAAAAABZARLLZDEE5J4CACRH4A64CY4TTH3A'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SeasonalKirito/SeasonWare/main/Loader.lua?token=GHSAT0AAAAAABZARLLYFLZ2OT7GNR3XLPF4Y4TTOHA'))()
 ```
