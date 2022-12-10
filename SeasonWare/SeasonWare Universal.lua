@@ -1,3 +1,74 @@
+--[[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Script made by @SEASONAL#1235
+Join SeasonWare Discord - https://discord.gg/TqHYYVyyJR
+Have a fun time with the script.
+Script get's updated every week
+so dont expect an outdated script.
+
+ 
+
+👋Good Bye👋
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]--
+
 getgenv().SecureMode = true
 
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
