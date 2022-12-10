@@ -23,17 +23,25 @@
 
 
 
-Credits to Extorius Hub for giving me this idea to create a 
-ass raise a random script.
+Script made by @SEASONAL#1235
+Join SeasonWare Discord - https://discord.gg/TqHYYVyyJR
+Have a fun time with the script.
+Script get's updated every week
+so dont expect an outdated script.
 
-You can find Extorius Hub's script at this link "https://scriptblox.com/script/raise-a-floppa-2-2x-Cash-Flopp-utofrm-7098"
-
-if you're here your either looking into my code or your gonna steal 
-it for your script, so you dont need permission to steal this code as 
-i only spent like 30 minutes on it, so go wild with those scripts and 
-have a good day.
+ 
 
 👋Good Bye👋
+
+
+
+
+
+
+
+
+
+
 
 
 
