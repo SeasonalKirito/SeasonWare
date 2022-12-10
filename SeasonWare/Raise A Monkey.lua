@@ -70,57 +70,13 @@ so dont expect an outdated script.
 ]]--
 
 getgenv().autoFeed = false
+getgenv().SecureMode = true
 
-if not game:IsLoaded() then
-    game.Loaded:Wait()
-end
-repeat
-    task.wait()
-until game:GetService("Players") and game:GetService("Workspace") and game:GetService("ReplicatedStorage") and
-    game:GetService("UserInputService")
 
-getgenv().SecureMode = false
 local LocalPlayer = game:GetService("Players").LocalPlayer
-_G.objs = {}
-
-getgenv().spoof = function(obj, property, value)
-	local s = pcall(function()
-		local lol = obj[property]
-	end)
-	if s then
-		table.insert(_G.objs, {obj, property, value})
-	end
-end
-
-getgenv().findwithintable = function(o, p)
-	for i, v in pairs(_G.objs) do
-		if table.find(v, o) and table.find(v, p) then
-			return v
-		end
-	end
-	return nil
-end
-
-getgenv().unspoof = function(obj, property)
-	local lol = findwithintable(obj, property)
-	if lol then
-		table.remove(_G.objs, table.find(_G.objs, lol))
-	end
-end
 
 
-local mt = getrawmetatable(game)
-setreadonly(mt, false)
-old = mt.__index
 
-mt.__index = newcclosure(function(o, p)
-	local t = findwithintable(o, p)
-	if t ~= nil then
-		return t[3]
-	end
-	
-	return old(o, p)
-end)
 local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
 
 local function returnHRP()
@@ -133,6 +89,9 @@ local function returnHRP()
         return LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
     end
 end
+
+
+
 local function returnHUM()
     if not LocalPlayer.Character then
         return
@@ -147,6 +106,8 @@ repeat
     task.wait()
 until returnHRP() and returnHUM()
 
+
+
 local Window =
     Rayfield:CreateWindow(
     {
@@ -159,8 +120,8 @@ local Window =
             FileName = ""
         },
         Discord = {
-            Enabled = false,
-            Invite = "", -- The Discord invite code, do not include discord.gg/
+            Enabled = true,
+            Invite = "TqHYYVyyJR", -- The Discord invite code, do not include discord.gg/
             RememberJoins = true -- Set this to false to make them join the discord every time they load it up
         },
         KeySystem = false, -- Set this to true to use our key system
