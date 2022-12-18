@@ -7,6 +7,9 @@ elseif game.PlaceId == 9819654737 then --Raise A Sonic--
 elseif game.PlaceId == 9980743733 then --[☃]Raise a Van 2--
   loadstring(game:HttpGet("https://raw.githubusercontent.com/SeasonalKirito/SeasonWare/main/SeasonWare/%5B☃%5DRaise%20a%20Van%202.lua"))()
   
+elseif game.PlaceId == 6284583030 then --[🎄 EVENT] Pet Simulator X! 🐾--
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/SeasonalKirito/SeasonWare/main/SeasonWare/Pet%20Simulator%20X%20Auto%20Gift.lua"))()
+  
 else --SeasonWare Universal--
   loadstring(game:HttpGet("https://raw.githubusercontent.com/SeasonalKirito/SeasonWare/main/SeasonWare/SeasonWare%20Universal.lua"))()
   
