@@ -1,7 +1,7 @@
 --This script unpotimized as fuck but ignore that--
 
-function presents()
-    if getgenv().SelectedOption == "Draw001" then
+function eggs()
+    if getgenv().SelectedEgg == "Draw001" then
         local args = {
         [1] = "Hatch",
         [2] = "Draw001",
@@ -10,7 +10,7 @@ function presents()
 
         game:GetService("ReplicatedStorage").Remotes.Draw:FireServer(unpack(args))
     end
-    if getgenv().SelectedOption == "Draw002" then
+    if getgenv().SelectedEgg == "Draw002" then
         local args = {
             [1] = "Hatch",
             [2] = "Draw002",
@@ -129,22 +129,26 @@ local Toggle = Tab:CreateToggle({
     end,
  })
 
+ local Section = Tab:CreateSection("Pets")
+
+local Dropdown = Tab:CreateDropdown({
+    Name = "Buy egg",
+    Options = {"Draw001","Draw002"},
+    CurrentOption = "Egg",
+    Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Option)
+        getgenv().SelectedEgg = Option
+        eggs()
+    end,
+ })
 
 local Tab = Window:CreateTab("Teleports", 7743871002) -- Title, Image
 
 local Section = Tab:CreateSection("Locations")
 
-local Label = Tab:CreateLabel("Work's anywhere you are but still slow.")
+local Label = Tab:CreateLabel("Not even done yet")
 
-local Dropdown = Tab:CreateDropdown({
-    Name = "Locations",
-    Options = {"Draw001","Draw002"},
-    CurrentOption = "Location",
-    Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-    Callback = function(Option)
-        
-    end,
- })
+
 
  local Tab = Window:CreateTab("Misc", 7733975185) -- Title, Image
 
